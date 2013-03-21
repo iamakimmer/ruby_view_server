@@ -3,7 +3,7 @@ require 'webrick'
 
 root = File.expand_path 'public'
 
-server = WEBrick::HTTPServer.new :Port => 8000, :DocumentRoot => root
+server = WEBrick::HTTPServer.new :Port => 8080, :DocumentRoot => root
 
 ## ===========
 def process_erb(string, req = nil)
