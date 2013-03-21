@@ -11,3 +11,8 @@ puts template.result(binding)
 nums = [1,2,3,4]
 template = ERB.new "size of array is <%=nums.count%>"
 puts template.result(binding) 
+
+x = {first: 'matt', last: 'kim'}
+template = ERB.new "full name is <%=x[:first]%> <%=x[:last]%>"
+puts template.result(binding)
+
